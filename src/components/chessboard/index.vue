@@ -1,6 +1,6 @@
 <template>
   <div ref="cg_board" >
-    <div class="cg-wrap"></div><br/>
+    <!-- <div class="cg-wrap"></div><br/> -->
   </div>
 </template>
 
