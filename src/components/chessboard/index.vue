@@ -1,6 +1,6 @@
 <template>
-  <div class="blue merida">
-    <div ref="board" class="cg-board-wrap"></div><br/>
+  <div ref="cg_board" >
+    <div class="cg-wrap"></div><br/>
   </div>
 </template>
 
@@ -160,7 +160,7 @@ export default {
     },
     loadPosition () { // set a default value for the configuration object itself to allow call to loadPosition()
       this.game.load(this.fen)
-      this.board = Chessground(this.$refs.board, {
+      this.board = Chessground(this.$refs.cg_board, {
         fen: this.game.fen(),
         turnColor: this.toColor(),
         movable: {
