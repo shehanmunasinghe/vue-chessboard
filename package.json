@@ -18,9 +18,10 @@
   "module": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --config config/webpack.config.dev.js --progress --watch",
-    "build": "npm run build:browser && npm run build:common",
+    "build": "npm run build:browser && npm run build:common && npm run build:css",
     "build:browser": "cross-env NODE_ENV=production webpack --config config/webpack.config.browser.js --progress --hide-modules",
     "build:common": "cross-env NODE_ENV=production webpack --config config/webpack.config.common.js --progress --hide-modules",
+    "build:css":"cp src/components/chessboard/style/theme.css dist/vue-chessboard.css",
     "prepublish": "npm run build",
     "pretest": "eslint . --ext .js --ext .vue"
   },
