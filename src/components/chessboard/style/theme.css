@@ -5,12 +5,50 @@
  * board and pieces displayed!
  */
 
-.cg-board-wrap {
+/* .cg-board-wrap {
   width: 320px;
   height: 320px;
   position: relative;
   display: block;
+} */
+
+/* For mobile phones: */
+@media only screen and (max-width: 320px) {
+  .cg-board-wrap {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    display: block;
+  } 
 }
+
+@media only screen and (max-width: 600px) {
+  .cg-board-wrap {
+    width: 320px;
+    height: 320px;
+    position: relative;
+    display: block;
+  } 
+}
+@media only screen and (max-width: 800px) {
+  .cg-board-wrap {
+    width: 560px;
+    height: 560px;
+    position: relative;
+    display: block;
+  } 
+}
+@media only screen and (min-width: 800px) {
+  .cg-board-wrap {
+    width: 720px;
+    height: 720px;
+    position: relative;
+    display: block;
+  } 
+}
+
+/* ____________ */
+
 .cg-board {
   position: absolute;
   top: 0;
