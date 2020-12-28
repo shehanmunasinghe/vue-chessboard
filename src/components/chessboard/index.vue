@@ -1,6 +1,12 @@
 <template>
-  <div class="blue merida">
-    <div ref="board" class="cg-board-wrap"></div><br/>
+  <div class='cg-wrap'>
+    <div class='cg-helper'>
+      <div class='cg-container'>
+        <div class='blue merida'>
+          <div ref='board' class='cg-board-wrap'></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

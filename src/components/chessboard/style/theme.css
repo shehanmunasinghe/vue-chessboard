@@ -12,7 +12,32 @@
   display: block;
 } */
 
-/* For mobile phones: */
+.cg-wrap {
+  box-sizing: content-box;
+  position: relative;
+  display: block;
+}
+
+.cg-helper {
+  position: absolute;
+  width: 12.5%;
+  padding-bottom: 12.5%;
+  display: table; /** hack: round to full pixel size in chrome */
+  bottom: 0;
+}
+
+.cg-container {
+  position: absolute;
+  width: 800%;
+  height: 800%;
+  display: block;
+  bottom: 0;
+}
+
+
+/* _________________________ */
+
+/* For mobile phones:
 @media only screen and (max-width: 320px) {
   .cg-board-wrap {
     width: 280px;
@@ -45,7 +70,7 @@
     position: relative;
     display: block;
   } 
-}
+} */
 
 /* ____________ */
 
